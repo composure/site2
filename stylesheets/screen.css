@@ -67,18 +67,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 21, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+}
+
+/* line 25, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 hr {
   border-top: 1px solid #ccd4d5;
 }
 
-/* line 25, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 29, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 h3 {
-  font-family: "Roboto Slab", sans-serif;
-  text-shadow: 0 0 1px rgba(51, 51, 51, 0.2);
+  font-family: "Roboto Slab";
 }
 
-/* line 30, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 34, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 a:hover, a:focus {
   color: #decfad;
   -webkit-transition: color 0.6s ease;
@@ -87,16 +91,16 @@ a:hover, a:focus {
   transition: color 0.6s ease;
 }
 
-/* line 36, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 40, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .row-flipped {
   text-align: right;
 }
-/* line 37, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 41, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .row-flipped h3 {
   text-align: right;
 }
 
-/* line 43, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 47, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 body {
   line-height: 1.1;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -105,42 +109,40 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 57, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 61, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 h2 {
-  font-family: "Roboto Slab", sans-serif;
-  text-shadow: 0 0 1px rgba(51, 51, 51, 0.2);
+  font-family: "Roboto Slab";
   font-size: 42px;
 }
 
-/* line 63, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 67, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header {
   width: 100%;
-  color: white;
   padding: 18px 9px;
   padding-left: 18px;
   padding-right: 18px;
 }
-/* line 75, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 77, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header a {
   text-decoration: none;
   color: white;
 }
-/* line 80, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 82, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header a:not(:first-child) {
   padding-left: 12px;
 }
-/* line 84, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 86, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .social i {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
-/* line 89, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 91, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .logo img {
   vertical-align: middle;
   padding: 0;
   margin: 8px;
   border: 0px;
 }
-/* line 103, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 105, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 header .logo .brand {
   font-size: 28pt;
   font-weight: bold;
@@ -152,18 +154,18 @@ header .logo .brand {
   text-shadow: 0px 4px 2px #3a3a3a;
 }
 
-/* line 120, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 122, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #bk {
   background: url("../images/mtn.jpg") 50% 50%;
   background-size: cover;
 }
 
-/* line 125, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 127, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 129, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 131, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero {
   text-align: center;
   width: 100%;
@@ -172,11 +174,11 @@ section#hero {
   padding: 8px 36px;
   text-shadow: 0px 2px 6px #6a6a6a;
 }
-/* line 143, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 145, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero input {
   background: rgba(255, 255, 255, 0.7);
 }
-/* line 147, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 149, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero .muted {
   font-size: 12pt;
   line-height: 1.08;
@@ -185,25 +187,25 @@ section#hero .muted {
   color: rgba(255, 255, 255, 0.7);
   font-style: italic;
 }
-/* line 158, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 160, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero h2 {
   font-size: 36pt;
   padding-top: 60px;
   padding-bottom: 16px;
 }
-/* line 166, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 168, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero p {
   font-size: 16pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
-/* line 175, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 177, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#hero img.screenshot {
   width: 100%;
   margin-top: 60px;
 }
 
-/* line 186, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 188, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 img {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -213,51 +215,51 @@ img {
   border-radius: 5px;
 }
 
-/* line 198, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 200, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white {
   background-color: #e8e8e8;
   min-height: 380px;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 205, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 207, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white h2 {
   font-size: 32pt;
   text-align: center;
   padding-top: 30px;
 }
-/* line 212, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 214, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white p {
   font-size: 16pt;
   text-align: center;
   line-height: 1.5;
   padding: 30px 0;
 }
-/* line 221, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 223, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-white img {
   margin: 0 auto;
   vertical-align: middle;
 }
 
-/* line 228, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 230, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark {
   background-color: white;
   color: #d8d8d8;
   color: #34495e;
   font-size: 16pt;
-  padding-bottom: 15px;
+  padding-bottom: 42px;
   padding-top: 42px;
 }
-/* line 231, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 233, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark hr {
   width: 40%;
 }
-/* line 237, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 239, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img {
   width: 112px;
   height: 112px;
 }
-/* line 242, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 244, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img.ban {
   width: 112px;
   height: 112px;
@@ -269,7 +271,7 @@ section#feature-dark img.ban {
   transform: scale(0.7);
   opacity: 0;
 }
-/* line 251, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 253, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark img.ban.womp {
   opacity: 1.0;
   -webkit-transition: all 0.15s ease-in;
@@ -282,99 +284,94 @@ section#feature-dark img.ban.womp {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 258, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 260, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark h2 {
   font-size: 32pt;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 264, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 266, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark h3 {
   color: #2c3e50;
   font-size: 24pt;
   margin-top: 16px;
   padding-bottom: 24px;
 }
-/* line 278, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 280, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark p {
   font-size: 18pt;
   line-height: 1.1;
 }
-/* line 283, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 285, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#feature-dark header {
   text-transform: uppercase;
   color: #d8d8d8;
 }
 
-/* line 290, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 292, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action {
   text-align: center;
   min-height: 380px;
   padding: 30px 36px;
   background-color: #8cd69c;
 }
-/* line 297, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 299, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action h2 {
   font-size: 32pt;
   padding-bottom: 30px;
   color: white;
 }
-/* line 304, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 306, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action h3 {
   font-size: 16pt;
 }
-/* line 308, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 310, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#call-to-action p {
   font-size: 14pt;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 
-/* line 317, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 319, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us {
   background-color: white;
   min-height: 200px;
   padding: 36px 36px;
   color: #202020;
 }
-/* line 326, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 328, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us address {
   line-height: 1.4;
 }
-/* line 332, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 334, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us .column-header {
   text-align: center;
   text-transform: uppercase;
   font-size: 10pt;
   padding-bottom: 12px;
 }
-/* line 343, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 345, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us .built-with {
   padding: 30px 0;
   text-align: center;
   color: #6d6d6d;
 }
-/* line 350, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 352, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us ul {
   text-align: center;
 }
-/* line 353, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 355, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us ul li {
   padding-bottom: 4px;
   font-size: 8pt;
 }
-/* line 360, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 362, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 section#us a {
   text-decoration: none;
   color: #202020;
 }
 
-@font-face {
-  font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlab-Bold.ttf");
-}
-
-/* line 371, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 368, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .category {
   text-transform: uppercase;
   font-family: 'Helvetica Neue';
@@ -385,40 +382,40 @@ section#us a {
   padding-bottom: 12px;
 }
 
-/* line 383, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 380, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 ::-webkit-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 387, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 384, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #4d4d4d !important;
 }
 
-/* line 391, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 388, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #4d4d4d !important;
 }
 
-/* line 395, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 392, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 :-ms-input-placeholder {
   color: #4d4d4d !important;
 }
 
-/* line 399, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 396, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #subscription-message {
   padding: 16px 0;
 }
 
-/* line 403, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 400, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .column-separator {
   text-align: center;
   padding: 8px 0;
 }
 
-/* line 408, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 405, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 #thanks {
   text-align: center;
   font-size: 14pt;
@@ -429,7 +426,7 @@ section#us a {
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 421, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+  /* line 418, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video {
     position: relative;
     padding-top: 25px;
@@ -439,7 +436,7 @@ section#us a {
     overflow: hidden;
   }
 
-  /* line 432, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+  /* line 429, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video iframe,
   .flex-video object,
   .flex-video embed {
@@ -451,32 +448,32 @@ section#us a {
   }
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  /* line 442, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+  /* line 439, C:/Users/w7-box/Composure/site2/sass/screen.scss */
   .flex-video {
     padding-top: 0;
   }
 }
-/* line 445, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 442, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .flex-video .youtube-player {
   max-width: 800px;
   max-height: 600px;
 }
 
-/* line 453, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 450, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #5a9fd7;
   border-color: #78abd0;
 }
 
-/* line 459, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 456, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .btn-info {
   color: #fff;
   background-color: #3287cc;
   border-color: #78abd0;
 }
 
-/* line 465, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 462, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .translucent-back {
   background-color: rgba(120, 171, 208, 0.5);
   padding-top: 20px;
@@ -487,7 +484,7 @@ section#us a {
   border-radius: 5px;
 }
 
-/* line 472, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 469, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .translucent-header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(120, 171, 208, 0.7)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0));
@@ -496,7 +493,7 @@ section#us a {
   background-image: linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0));
 }
 
-/* line 476, C:/Users/w7-box/Composure/site2/sass/screen.scss */
+/* line 473, C:/Users/w7-box/Composure/site2/sass/screen.scss */
 .nav-down-arrow a {
   color: white;
 }
