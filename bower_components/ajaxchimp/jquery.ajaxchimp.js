@@ -36,7 +36,8 @@ function getURLParameter(name) {
         var form = this;
         var email = form.find('input[type=email]');
         var label = $('body').find('#subscription-message');
-	var src = getURLParameter("src");
+	    var src = getURLParameter("src");
+	    var utm_source = getURLParameter("utm_source");
 
         var settings = $.extend({
             'url': form.attr('action')
@@ -87,7 +88,8 @@ function getURLParameter(name) {
             }
 
             var data = {};
-	    data["SRC"] = src;
+	        data["SRC"] = src;
+            data["UTM_SOURCE"] = utm_source;
             var dataArray = form.serializeArray();
             $.each(dataArray, function (index, item) {
                 data[item.name] = item.value;
