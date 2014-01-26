@@ -7,6 +7,28 @@
 @import "compass/css3";
 
 $light-colour: #e8e8e8;
+$cta-colour: #8cd69c;
+$dark-section-colour: lighten(#95a5a6, 40%);
+$head-font-name: "Roboto Slab";
+
+$shadow-colour: #fff;
+
+@font-face {
+	font-family: $head-font-name;
+	src: url('../fonts/RobotoSlab-Bold.ttf');
+}
+
+@mixin head-font {
+	font-family: $head-font-name;
+}
+
+hr {
+	border-top: 1px solid lighten(#95a5a6, 20%);
+}
+
+h3 {
+	@include head-font;
+}
 
 a {
 	&:hover, &:focus {
@@ -15,12 +37,21 @@ a {
 	}
 }
 
+.row-flipped {
+	h3 {
+		text-align: right;
+	}
+	text-align: right;
+}
 
 body {
 	line-height: 1.1;
 
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 	overflow-x: hidden;
+	
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
 }
 
 // button {
@@ -28,15 +59,13 @@ body {
 // }
 
 h2 {
-	font-family: 'Roboto Slab Bold';
+	@include head-font;
 
 	font-size: 42px;
 }
 
 header {
 	width: 100%;
-
-	color: white;
 
 	// border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
@@ -199,9 +228,11 @@ section#feature-white {
 }
 
 section#feature-dark {
-	background-color: rgb(26, 25, 31);
-	min-height: 380px;
-	text-align: center;
+	background-color: $dark-section-colour;
+	
+	hr {
+		width: 40%;
+	}
 
 	color: #d8d8d8;
 
@@ -232,7 +263,18 @@ section#feature-dark {
 		padding-bottom: 30px;
 	}
 
-	padding-bottom: 15px;
+	h3 {
+		color: #2c3e50;
+		font-size: 24pt;
+		
+		margin-top: 16px;
+		padding-bottom: 24px;
+	}
+
+	color: #34495e;
+	font-size: 16pt;
+
+	padding-bottom: 42px;
 	padding-top: 42px;
 
 	p {
@@ -252,11 +294,13 @@ section#call-to-action {
 	min-height: 380px;
 	padding: 30px 36px;
 
-	background-color: $light-colour;
+	background-color: $cta-colour;
 
 	h2 {
 		font-size: 32pt;
 		padding-bottom: 30px;
+		
+		color: white;
 	}
 
 	h3 {
@@ -273,7 +317,7 @@ section#call-to-action {
 }
 
 section#us {
-	background-color: #9a9a9a;
+	background-color: $dark-section-colour;
 	min-height: 200px;
 
 	padding: 36px 36px;
@@ -282,11 +326,13 @@ section#us {
 	color: $us-section-colour;
 	
 	address {
-		text-shadow: 0px 2px 2px #ccc;
+		// text-shadow: 0px 2px 2px $shadow-colour;
+		
+		line-height: 1.4;
 	}
 
 	.column-header {
-		text-shadow: 0px 2px 2px #ccc;
+		// text-shadow: 0px 2px 2px $shadow-colour;
 
 		text-align: center;
 		text-transform: uppercase;
@@ -308,7 +354,8 @@ section#us {
 
 		li {
 			padding-bottom: 4px;
-			text-shadow: 0px 2px 2px #bb9;
+			// text-shadow: 0px 2px 2px #bb9;
+			font-size: 8pt;
 		}
 	}
 
@@ -316,36 +363,6 @@ section#us {
 		text-decoration: none;
 		color: $us-section-colour;
 	}
-}
-
-@font-face {
-  font-family: 'Miso Bold';
-  src: url('../fonts/miso-bold.otf');
-}
-
-@font-face {
-  font-family: 'Miso Regular';
-  src: url('../fonts/miso-regular.otf');
-}
-
-@font-face {
-  font-family: 'Roboto Slab Bold';
-  src: url('../fonts/RobotoSlab-Bold.ttf');
-}
-
-@font-face {
-	font-family: 'GeosansLight-Oblique';
-	src: url('../fonts/GeosansLight-Oblique.ttf');
-}
-
-@font-face {
-	font-family: 'Cicle Gordita';
-	src: url('../fonts/Cicle Gordita.ttf');
-}
-
-@font-face {
-	font-family: 'Corbert Italic';
-	src: url('../fonts/Corbert Italic.otf');
 }
 
 .category {
@@ -383,10 +400,6 @@ section#us {
 .column-separator {
 	text-align: center;
 	padding: 8px 0;
-}
-
-hr {
-	border-top: 1px solid #b8b8b8;
 }
 
 #thanks {
@@ -455,4 +468,8 @@ border-color: $border-colour;
 
 .translucent-header {
 	@include background-image(linear-gradient(rgba(120, 171, 208, 0.7), rgba(0, 0, 0, 0)));
+}
+
+.nav-down-arrow a {
+	color: white;
 }
