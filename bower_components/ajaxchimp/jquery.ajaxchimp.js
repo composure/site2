@@ -38,6 +38,8 @@ function getURLParameter(name) {
         var label = $('body').find('#subscription-message');
 	    var src = getURLParameter("src");
 	    var utm_source = getURLParameter("utm_source");
+        var utm_term = getURLParameter("utm_term");
+        var page = window.location.href;
 
         var settings = $.extend({
             'url': form.attr('action')
@@ -90,6 +92,8 @@ function getURLParameter(name) {
             var data = {};
 	        data["SRC"] = src;
             data["UTM_SOURCE"] = utm_source;
+            data["UTM_TERM"] = utm_term;
+            data["PAGE"] = page;
             var dataArray = form.serializeArray();
             $.each(dataArray, function (index, item) {
                 data[item.name] = item.value;
