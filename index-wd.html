@@ -134,7 +134,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <a class="btn btn-download btn-info btn-block" href='#'
-                       onclick="alert('here');ga('send', 'pageview', 'download');">
+                       onclick="ga('send', 'event', 'Download link', 'click', 'top', 1)">
                       <i class="fa fa-download fa-2x pull-left"></i>
                       <div>Download</div>
                       <div class="subtitle">
@@ -203,7 +203,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4 col-sm-offset-4">
-            <a class="btn btn-download btn-warning btn-block">
+            <a class="btn btn-download btn-warning btn-block"
+             onclick="ga('send', 'event', 'Download link', 'click', 'bottom', 1)">>
               <i class="fa fa-download fa-2x pull-left"></i>
               <div>Download Composure</div>
               <div class="subtitle">
