@@ -462,6 +462,8 @@ border-color: $border-colour;
 .translucent-back {
 	background-color: rgba(120, 171, 208, 0.5);
 	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
 	
 	@include border-radius(5px);
 }
@@ -472,4 +474,33 @@ border-color: $border-colour;
 
 .nav-down-arrow a {
 	color: white;
+}
+
+.btn-download {
+	padding: 12px 12px 12px 12px;
+	font-size: 24px;
+	text-align: left;
+	
+	.subtitle {
+		font-size: 14px;
+	}
+}
+
+section#call-to-action p.link-subtitle {
+	padding-top: 6px;
+	font-size: 10pt;
+	
+	color: rgb(48, 52, 48);
+	font-style: italic;
+	
+	a {
+		color: white;
+	}
+	
+	a:hover {
+		color: white;
+		transition: none;
+		text-decoration: none;
+		border-bottom: 1px dotted white;
+	}
 }
