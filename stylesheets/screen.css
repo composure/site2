@@ -523,17 +523,37 @@ section#us a {
 }
 
 /* line 502, ../sass/screen.scss */
+section#hero p.link-subtitle {
+  padding-top: 6px;
+  padding-bottom: 0;
+  font-size: 10pt;
+  color: #303430;
+  font-style: italic;
+}
+/* line 510, ../sass/screen.scss */
+section#hero p.link-subtitle a {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 514, ../sass/screen.scss */
+section#hero p.link-subtitle a:hover {
+  color: white;
+  transition: none;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+/* line 522, ../sass/screen.scss */
 section#call-to-action p.link-subtitle {
   padding-top: 6px;
   font-size: 10pt;
   color: #303430;
   font-style: italic;
 }
-/* line 509, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 section#call-to-action p.link-subtitle a {
   color: white;
 }
-/* line 513, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 section#call-to-action p.link-subtitle a:hover {
   color: white;
   transition: none;
